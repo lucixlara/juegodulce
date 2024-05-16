@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat the Sweet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="screen visible">
+    <h2>Game: "Have a sweet"</h2>
+    <button type="button" class="btn" id="start-btn">Start the game</button>
+</div>
+
+<div id="sweet-screen" class="screen"></div>
+
+<div class="screen game-container" id="game-container">
+    <h3 id="time" class="time">Time: 00 sec</h3>
+    <h3 id="score" class="score">Score: 0</h3>
+    <h5 id="message" class="message">
+        Had enough?<br/>
+        you have eaten too much sweet
+        <div>
+            <button id="btn-continue">Continue</button>
+            <button id="btn-stop">Stop</button>
+        </div>
+    </h5>
+</div>
+
+<audio id="bite" src="./assets/30_catch_the_sweet_assets_bite.mp3"></audio>
+
+<script defer src="app.js"></script>
+<script defer src="script.js"></script>
+</body>
+</html>
